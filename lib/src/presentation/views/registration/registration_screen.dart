@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:web/src/config/config.dart';
-import 'package:web/src/presentation/views/login/widgets/login_widgets.dart';
+import 'package:web/src/presentation/views/registration/widgets/registration_widgets.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class RegistrationScreen extends StatelessWidget {
+  const RegistrationScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,10 +15,10 @@ class LoginScreen extends StatelessWidget {
             Container(
               color: AppColors.primary_100,
             ),
-            const LoginBody()
+            const RegistrationBody()
           ],
         ),
-        mobile: const LoginBody(),
+        mobile: const RegistrationBody(),
       ),
     );
   }

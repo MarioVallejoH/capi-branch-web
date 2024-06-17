@@ -18,7 +18,7 @@ class CustomAppRouter {
   static const String home = '/home';
 
   /// Represents the route path for the registration screen.
-  static const String registration = '/home';
+  static const String registration = '/registration';
 
   /// Creates a GoRouter instance with defined routes and their corresponding builders.
   GoRouter get appRouter => GoRouter(
@@ -26,9 +26,19 @@ class CustomAppRouter {
         initialLocation: '/',
         routes: [
           GoRoute(
-            path: '/onBoarding',
-            name: '/onBoarding',
+            path: '/',
+            name: '/',
             builder: (context, state) => const LoginScreen(),
+          ),
+          GoRoute(
+            path: login,
+            name: login,
+            builder: (context, state) => const LoginScreen(),
+          ),
+          GoRoute(
+            path: registration,
+            name: registration,
+            builder: (context, state) => const RegistrationScreen(),
           ),
         ],
       );
